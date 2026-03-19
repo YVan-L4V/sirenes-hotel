@@ -1,0 +1,1 @@
+import"./hoisted.Oe-6xOpk.js";const e=document.getElementById("reservationForm"),t=document.getElementById("formSuccess");e?.addEventListener("submit",s=>{s.preventDefault(),e&&t&&(e.style.display="none",t.style.display="block")});
