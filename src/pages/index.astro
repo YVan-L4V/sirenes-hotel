@@ -1,0 +1,296 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Accueil" activeNav="accueil">
+
+  <!-- HERO avec vraie photo piscine -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow animate-in" style="animation-delay:0.2s">Lambaréné • Gabon • Lac Mbolet</p>
+      <h1 class="hero-title animate-in" style="animation-delay:0.5s">
+        <span class="line1">Les Sirènes</span>
+        <span class="line2">G&B</span>
+      </h1>
+      <div class="hero-waves animate-in" style="animation-delay:0.8s">〰〰〰</div>
+      <p class="hero-subtitle animate-in" style="animation-delay:1s">
+        Une résidence d'exception entre fleuve Ogooué et lac Mbolet.<br />
+        Là où la nature gabonaise rencontre l'art de vivre.
+      </p>
+      <div class="hero-ctas animate-in" style="animation-delay:1.2s">
+        <a href="/hebergement" class="btn-primary">Découvrir les chambres</a>
+        <a href="/contact" class="btn-outline">Réserver maintenant</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-stats">
+    <div class="container stats-grid">
+      <div class="stat reveal"><span class="stat-number">4</span><span class="stat-label">Suites avec salon</span></div>
+      <div class="stat-divider">〰</div>
+      <div class="stat reveal" style="transition-delay:0.15s"><span class="stat-number">2</span><span class="stat-label">Cuisines du Monde</span></div>
+      <div class="stat-divider">〰</div>
+      <div class="stat reveal" style="transition-delay:0.3s"><span class="stat-number">∞</span><span class="stat-label">Vue sur le lac Mbolet</span></div>
+      <div class="stat-divider">〰</div>
+      <div class="stat reveal" style="transition-delay:0.45s"><span class="stat-number">1</span><span class="stat-label">Piscine privée</span></div>
+    </div>
+  </section>
+
+  <!-- GALERIE VUES LAC -->
+  <section class="section-gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Cadre Exceptionnel</span>
+        <h2>Au Bord du Lac Mbolet</h2>
+        <div class="gold-divider"><span>〰</span></div>
+        <p>La résidence surplombe le lac Mbolet, offrant des vues à couper le souffle sur les eaux calmes et la végétation gabonaise.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-main">
+          <img src="/images/vue2.jpg" alt="Vue sur le lac Mbolet depuis la résidence" />
+          <div class="gallery-caption">Vue depuis la résidence</div>
+        </div>
+        <div class="gallery-side">
+          <div class="gallery-item">
+            <img src="/images/vue1.jpg" alt="Résidence Les Sirènes G&B vue du lac" />
+          </div>
+          <div class="gallery-item">
+            <img src="/images/vue3.jpg" alt="Panorama lac Mbolet" />
+          </div>
+          <div class="gallery-item">
+            <img src="/images/coucher_soleil.jpg" alt="Coucher de soleil sur le lac" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HÉBERGEMENT APERÇU -->
+  <section class="section-preview">
+    <div class="container">
+      <div class="preview-inner">
+        <div class="preview-image reveal">
+          <img src="/images/hero_piscine.jpg" alt="Piscine de la résidence Les Sirènes G&B" />
+          <div class="preview-image-badge">Piscine privée</div>
+        </div>
+        <div class="preview-text reveal" style="transition-delay:0.2s">
+          <span class="eyebrow">Hébergement</span>
+          <h2>Votre Refuge au Gabon</h2>
+          <div class="gold-divider" style="margin-left:0; max-width:180px"><span>〰</span></div>
+          <p>Construite autour d'une belle piscine avec vue sur le lac Mbolet, la résidence propose des chambres classiques et 4 suites exclusives avec salon, toutes climatisées et équipées.</p>
+          <div class="preview-cards">
+            <div class="preview-card">
+              <span class="pc-icon">🛏️</span>
+              <div>
+                <strong>Chambres Classiques</strong>
+                <p>À partir de 35 500 FCFA</p>
+              </div>
+            </div>
+            <div class="preview-card featured-pc">
+              <span class="pc-icon">🌟</span>
+              <div>
+                <strong>Suites avec Salon</strong>
+                <p>À partir de 70 500 FCFA</p>
+              </div>
+            </div>
+          </div>
+          <a href="/hebergement" class="btn-primary" style="margin-top:1.5rem; display:inline-block">Voir les chambres & suites</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESTAURANT -->
+  <section class="section-restaurant section-dark">
+    <div class="container">
+      <div class="restaurant-inner">
+        <div class="restaurant-text reveal">
+          <span class="eyebrow" style="color:var(--or-sable)">Restaurant</span>
+          <h2 style="color:var(--creme-ecru)">Cuisines du Monde</h2>
+          <div class="gold-divider" style="margin-left:0; max-width:180px"><span>〰</span></div>
+          <p>Sur la terrasse surplombant le lac Mbolet, notre chef compose une carte entre gastronomie gabonaise et saveurs européennes.</p>
+          <ul class="restaurant-highlights">
+            <li>🐟 Carpe à l'Odika (chocolat de brousse)</li>
+            <li>🌿 Poisson en paquet, spécialité locale</li>
+            <li>🍖 Viande de brousse selon arrivage</li>
+            <li>🌍 Cuisine africaine & européenne</li>
+          </ul>
+          <p class="restaurant-price">Prix moyen : <strong>15 000 FCFA</strong> par repas</p>
+          <a href="/restaurant" class="btn-outline" style="margin-top:1.5rem; display:inline-block">Voir le menu</a>
+        </div>
+        <div class="restaurant-photo reveal" style="transition-delay:0.2s">
+          <img src="/images/restaurant.jpg" alt="Restaurant Cuisines du Monde - Les Sirènes G&B" />
+          <div class="photo-overlay-text">Terrasse • Vue Lac Mbolet</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITÉS -->
+  <section class="section-activities">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Activités & Tourisme</span>
+        <h2>Explorez le Gabon</h2>
+        <div class="gold-divider"><span>〰</span></div>
+        <p>Le lac Mbolet et le fleuve Ogooué vous ouvrent leurs secrets.</p>
+      </div>
+      <div class="activities-grid">
+        <a href="/activites" class="activity-card reveal">
+          <div class="activity-img">
+            <img src="/images/piscine_aerien.jpg" alt="Vue aérienne piscine et lac" />
+          </div>
+          <div class="activity-body">
+            <div class="activity-icon">🏊</div>
+            <h3>Piscine & Détente</h3>
+            <p>Vue aérienne sur la piscine privée, entourée de palmiers et surplombant le lac.</p>
+          </div>
+        </a>
+        <a href="/activites" class="activity-card activity-card-featured reveal" style="transition-delay:0.15s">
+          <div class="activity-img">
+            <img src="/images/paysage.jpg" alt="Nature gabonaise" />
+          </div>
+          <div class="activity-body">
+            <div class="activity-icon">🏝️</div>
+            <h3>Île de la Tentation</h3>
+            <p>Pique-nique sur cette île mystérieuse, accessible uniquement depuis la résidence.</p>
+          </div>
+        </a>
+        <a href="/activites" class="activity-card reveal" style="transition-delay:0.3s">
+          <div class="activity-img">
+            <img src="/images/coucher_soleil.jpg" alt="Coucher de soleil sur le lac Mbolet" />
+          </div>
+          <div class="activity-body">
+            <div class="activity-icon">🌅</div>
+            <h3>Golden Hour</h3>
+            <p>Couchers de soleil spectaculaires sur le lac Mbolet, chaque soir.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-cta">
+    <div class="cta-bg"></div>
+    <div class="cta-overlay"></div>
+    <div class="container cta-content reveal">
+      <p class="eyebrow">Réservation</p>
+      <h2>Prêt pour un séjour d'exception ?</h2>
+      <div class="gold-divider"><span>〰</span></div>
+      <p>Contactez-nous directement pour vérifier nos disponibilités.</p>
+      <div class="cta-btns">
+        <a href="/contact" class="btn-primary">Réserver maintenant</a>
+        <a href="tel:+24166050741" class="btn-outline">📞 +241 66 05 07 41</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .hero { min-height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; background-image: url('/images/hero_piscine.jpg'); background-size: cover; background-position: center; transform: scale(1.05); transition: transform 8s ease; }
+  .hero:hover .hero-bg { transform: scale(1); }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(6,21,37,0.82) 0%, rgba(10,35,60,0.75) 50%, rgba(13,45,30,0.7) 100%); }
+  .hero-content { position: relative; z-index: 2; text-align: center; padding: 2rem; max-width: 800px; }
+  .hero-eyebrow { font-family: var(--font-modern); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.4em; text-transform: uppercase; color: var(--or-sable); opacity: 0; display: block; }
+  .hero-title { display: flex; flex-direction: column; align-items: center; margin: 1rem 0 0.5rem; opacity: 0; gap: 0; }
+  .line1 { font-family: var(--font-titre); font-size: clamp(2.2rem, 7vw, 5rem); color: var(--creme-ecru); text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.15; display: block; }
+  .line2 { font-family: var(--font-titre); font-size: clamp(3rem, 10vw, 7rem); background: linear-gradient(135deg, var(--or-sable), var(--or-solaire), var(--or-sable)); background-size: 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shimmer 4s ease infinite; line-height: 1.05; display: block; }
+  .hero-waves { font-size: 2rem; color: var(--or-sable); letter-spacing: 0.5em; margin: 0.8rem 0; opacity: 0; display: block; }
+  .hero-subtitle { font-family: var(--font-modern); font-size: clamp(0.95rem, 2vw, 1.15rem); font-weight: 300; color: rgba(245,240,230,0.88); line-height: 1.8; margin-bottom: 2.5rem; opacity: 0; }
+  .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; opacity: 0; }
+  .btn-outline { display: inline-block; padding: 0.9rem 2.5rem; background: transparent; color: var(--or-sable); font-family: var(--font-cinzel); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--or-sable); transition: all 0.3s ease; }
+  .btn-outline:hover { background: var(--or-sable); color: var(--bleu-abyssal); }
+  .hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; animation: fadeInUp 1s ease 1.8s both; }
+  .scroll-line { width: 1px; height: 50px; background: linear-gradient(to bottom, var(--or-sable), transparent); animation: scroll-pulse 2s ease infinite; }
+  @keyframes scroll-pulse { 0%,100%{opacity:1;transform:scaleY(1)} 50%{opacity:0.3;transform:scaleY(0.5)} }
+
+  .section-stats { background: var(--bleu-abyssal); padding: 3rem 0; border-bottom: 1px solid rgba(195,155,65,0.15); }
+  .stats-grid { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
+  .stat { text-align: center; padding: 1.5rem 3rem; flex: 1; min-width: 140px; }
+  .stat-divider { color: var(--or-sable); font-size: 1.5rem; opacity: 0.3; }
+  .stat-number { display: block; font-family: var(--font-titre); font-size: 2.5rem; color: var(--or-sable); line-height: 1; }
+  .stat-label { display: block; font-family: var(--font-modern); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(245,240,230,0.55); margin-top: 0.5rem; }
+
+  .section-gallery { padding: var(--section-pad); background: var(--sable-fin); }
+  .gallery-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 0.8rem; margin-top: 2rem; }
+  .gallery-main { position: relative; overflow: hidden; }
+  .gallery-main img { width: 100%; height: 420px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .gallery-main:hover img { transform: scale(1.03); }
+  .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(10,35,60,0.8)); padding: 1.5rem 1rem 0.8rem; font-family: var(--font-cinzel); font-size: 0.8rem; letter-spacing: 0.15em; color: var(--or-sable); text-transform: uppercase; }
+  .gallery-side { display: grid; grid-template-rows: repeat(3, 1fr); gap: 0.8rem; }
+  .gallery-item { overflow: hidden; }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; min-height: 120px; }
+  .gallery-item:hover img { transform: scale(1.05); }
+
+  .section-preview { padding: var(--section-pad); background: white; }
+  .preview-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .preview-image { position: relative; overflow: hidden; }
+  .preview-image img { width: 100%; height: 480px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .preview-image:hover img { transform: scale(1.03); }
+  .preview-image-badge { position: absolute; bottom: 1.5rem; left: 1.5rem; background: linear-gradient(135deg, var(--or-sable), var(--or-solaire)); color: var(--bleu-abyssal); font-family: var(--font-cinzel); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.4rem 1rem; }
+  .preview-text .eyebrow { font-family: var(--font-modern); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--or-sable); display: block; margin-bottom: 1rem; }
+  .preview-text h2 { font-family: var(--font-cinzel); font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--bleu-abyssal); margin-bottom: 1rem; }
+  .preview-text p { color: #5a6a7a; line-height: 1.8; margin-bottom: 1.5rem; }
+  .preview-cards { display: flex; flex-direction: column; gap: 0.8rem; }
+  .preview-card { display: flex; align-items: center; gap: 1rem; padding: 0.9rem 1.2rem; background: var(--sable-fin); border: 1px solid rgba(195,155,65,0.15); }
+  .preview-card.featured-pc { border-color: var(--or-sable); background: linear-gradient(135deg, rgba(195,155,65,0.06), rgba(212,175,55,0.04)); }
+  .pc-icon { font-size: 1.5rem; }
+  .preview-card strong { display: block; font-family: var(--font-cinzel); font-size: 0.9rem; color: var(--bleu-abyssal); }
+  .preview-card p { font-size: 0.8rem; color: var(--or-sable); margin: 0; }
+
+  .section-restaurant { padding: var(--section-pad); }
+  .restaurant-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .restaurant-text .eyebrow { font-family: var(--font-modern); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; display: block; margin-bottom: 1rem; }
+  .restaurant-text h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); margin-bottom: 1rem; }
+  .restaurant-text p { color: rgba(245,240,230,0.75); line-height: 1.8; margin-bottom: 1.5rem; }
+  .restaurant-highlights { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; }
+  .restaurant-highlights li { font-size: 0.92rem; color: rgba(245,240,230,0.85); }
+  .restaurant-price { font-family: var(--font-cinzel); font-size: 0.9rem; color: var(--or-sable); }
+  .restaurant-photo { position: relative; overflow: hidden; }
+  .restaurant-photo img { width: 100%; height: 480px; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .restaurant-photo:hover img { transform: scale(1.03); }
+  .photo-overlay-text { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(10,35,60,0.85)); padding: 2rem 1.5rem 1rem; font-family: var(--font-cinzel); font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--or-sable); }
+
+  .section-activities { padding: var(--section-pad); background: var(--creme-ecru); }
+  .activities-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .activity-card { display: block; text-decoration: none; color: inherit; background: white; border: 1px solid rgba(10,35,60,0.08); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+  .activity-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(10,35,60,0.12); }
+  .activity-card-featured { border-color: var(--or-sable); }
+  .activity-img { height: 200px; overflow: hidden; }
+  .activity-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+  .activity-card:hover .activity-img img { transform: scale(1.06); }
+  .activity-body { padding: 1.5rem; }
+  .activity-icon { font-size: 1.8rem; margin-bottom: 0.6rem; display: block; }
+  .activity-card h3 { font-family: var(--font-cinzel); font-size: 1.05rem; color: var(--bleu-abyssal); margin-bottom: 0.5rem; }
+  .activity-card p { font-size: 0.87rem; color: #5a6a7a; line-height: 1.7; }
+
+  .section-cta { position: relative; padding: var(--section-pad); overflow: hidden; }
+  .cta-bg { position: absolute; inset: 0; background-image: url('/images/coucher_soleil.jpg'); background-size: cover; background-position: center; }
+  .cta-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,35,60,0.88), rgba(13,58,46,0.85)); }
+  .cta-content { position: relative; text-align: center; color: var(--creme-ecru); }
+  .cta-content .eyebrow { font-family: var(--font-modern); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--or-sable); display: block; margin-bottom: 1rem; }
+  .cta-content h2 { font-family: var(--font-cinzel); font-size: clamp(1.8rem, 4vw, 3rem); color: var(--creme-ecru); margin-bottom: 1rem; }
+  .cta-content p { max-width: 500px; margin: 0 auto 2.5rem; color: rgba(245,240,230,0.7); }
+  .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+  .section-header { text-align: center; margin-bottom: 3rem; }
+  .section-header .eyebrow { font-family: var(--font-modern); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--or-sable); display: block; margin-bottom: 1rem; }
+  .section-header h2 { font-family: var(--font-cinzel); font-size: clamp(1.8rem, 4vw, 3rem); color: var(--bleu-abyssal); margin-bottom: 1rem; }
+  .section-header p { max-width: 600px; margin: 0 auto; color: #5a6a7a; }
+
+  @media (max-width: 768px) {
+    .gallery-grid, .preview-inner, .restaurant-inner, .activities-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .gallery-side { grid-template-rows: auto; grid-template-columns: repeat(3, 1fr); }
+    .gallery-main img, .preview-image img, .restaurant-photo img { height: 260px; }
+    .stat-divider { display: none; }
+  }
+</style>

@@ -1,0 +1,640 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Hébergement" activeNav="hebergement" description="Chambres et suites de charme à la Résidence Les Sirènes G&B, Lambaréné. Climatisation, vue sur le lac Mbolet.">
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('/images/hero_piscine.jpg'); background-size: cover; background-position: center;">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="eyebrow">Hébergement</span>
+      <h1>Votre Refuge<br /><em>au Cœur du Gabon</em></h1>
+      <div class="waves">〰〰〰</div>
+      <p>Chambres classiques et suites avec salon, toutes climatisées et équipées pour votre confort.</p>
+    </div>
+  </section>
+
+  <!-- ÉQUIPEMENTS INCLUS -->
+  <section class="amenities-bar">
+    <div class="container amenities-grid">
+      <div class="amenity">❄️ <span>Climatisation</span></div>
+      <div class="amenity">📺 <span>Télévision</span></div>
+      <div class="amenity">🚿 <span>Salle de bain privée</span></div>
+      <div class="amenity">🥤 <span>Réfrigérateur</span></div>
+      <div class="amenity">📶 <span>Wi-Fi gratuit</span></div>
+      <div class="amenity">🏊 <span>Piscine</span></div>
+    </div>
+  </section>
+
+  <!-- CHAMBRES CLASSIQUES -->
+  <section class="section-rooms">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Confort & Sérénité</span>
+        <h2>Chambres Classiques</h2>
+        <div class="gold-divider"><span>〰</span></div>
+        <p>Des chambres pensées pour le repos, avec tout le confort moderne dans un cadre paisible.</p>
+      </div>
+
+      <div class="room-showcase reveal">
+        <div class="room-visual">
+          <div class="room-visual-inner">
+            <div class="room-icon-large">🛏️</div>
+            <p class="room-visual-name">Chambre Classique</p>
+            <p class="room-visual-sub">Confort • Sérénité • Nature</p>
+          </div>
+        </div>
+        <div class="room-details">
+          <div class="room-tag">Chambre Standard</div>
+          <h3>Chambre Classique</h3>
+          <p class="room-desc">Un espace de repos bien pensé, offrant tout le confort nécessaire pour un séjour agréable au cœur de Lambaréné. Chaque chambre dispose de sa propre salle de bain et d'équipements modernes.</p>
+
+          <div class="room-features">
+            <div class="feature">
+              <span class="feature-icon">❄️</span>
+              <div>
+                <strong>Climatisation</strong>
+                <p>Régulation thermique individuelle</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">📺</span>
+              <div>
+                <strong>Télévision</strong>
+                <p>Chaînes locales et internationales</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🚿</span>
+              <div>
+                <strong>Salle de bain privée</strong>
+                <p>Équipée et bien entretenue</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🥤</span>
+              <div>
+                <strong>Réfrigérateur</strong>
+                <p>Mini-bar à votre disposition</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="room-price-block">
+            <div class="room-price">
+              <span class="price-from">À partir de</span>
+              <span class="price-amount">35 500 FCFA</span>
+              <span class="price-per">/ nuit</span>
+            </div>
+            <a href="/contact" class="btn-primary">Réserver cette chambre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUITES AVEC SALON -->
+  <section class="section-suites section-dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow" style="color:var(--or-sable)">Prestige & Exclusivité</span>
+        <h2 style="color:var(--creme-ecru)">Suites avec Salon</h2>
+        <div class="gold-divider"><span>〰</span></div>
+        <p style="color:rgba(245,240,230,0.7)">Nos 4 suites exclusives alliant espace, confort et élégance. Le choix idéal pour les familles et les longs séjours.</p>
+      </div>
+
+      <div class="suites-grid">
+        <div class="suite-card reveal" style="transition-delay:0.1s">
+          <div class="suite-number">01</div>
+          <div class="suite-icon">🌊</div>
+          <h3>Suite Ogooué</h3>
+          <p>Suite avec salon indépendant, inspirée du fleuve Ogooué. Décoration soignée aux tons bleus et dorés.</p>
+          <ul class="suite-perks">
+            <li>✦ Salon séparé</li>
+            <li>✦ Climatisation double zone</li>
+            <li>✦ Vue jardin</li>
+          </ul>
+          <div class="suite-price">70 500 FCFA / nuit</div>
+        </div>
+
+        <div class="suite-card suite-featured reveal" style="transition-delay:0.2s">
+          <div class="suite-badge">Coup de cœur</div>
+          <div class="suite-number">02</div>
+          <div class="suite-icon">🌿</div>
+          <h3>Suite Mbolet</h3>
+          <p>Notre suite la plus appréciée, donnant sur la végétation luxuriante du jardin. Idéale pour les familles.</p>
+          <ul class="suite-perks">
+            <li>✦ Grand salon familial</li>
+            <li>✦ Espace enfants</li>
+            <li>✦ Vue sur le parc</li>
+          </ul>
+          <div class="suite-price">70 500 FCFA / nuit</div>
+        </div>
+
+        <div class="suite-card reveal" style="transition-delay:0.3s">
+          <div class="suite-number">03</div>
+          <div class="suite-icon">🌅</div>
+          <h3>Suite Lambaréné</h3>
+          <p>Un hommage à la ville historique. Atmosphère chaleureuse mêlant touches africaines et confort européen.</p>
+          <ul class="suite-perks">
+            <li>✦ Salon cosy</li>
+            <li>✦ Décoration artisanale</li>
+            <li>✦ Ambiance chaleureuse</li>
+          </ul>
+          <div class="suite-price">70 500 FCFA / nuit</div>
+        </div>
+
+        <div class="suite-card reveal" style="transition-delay:0.4s">
+          <div class="suite-number">04</div>
+          <div class="suite-icon">⭐</div>
+          <h3>Suite Prestige G&B</h3>
+          <p>L'expérience ultime des Sirènes G&B. La plus spacieuse de nos suites avec des finitions dorées.</p>
+          <ul class="suite-perks">
+            <li>✦ Salon de standing</li>
+            <li>✦ Finitions or</li>
+            <li>✦ Service premium</li>
+          </ul>
+          <div class="suite-price">70 500 FCFA / nuit</div>
+        </div>
+      </div>
+
+      <div class="suites-cta reveal">
+        <a href="/contact" class="btn-primary">Réserver une suite</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PISCINE & ESPACES -->
+  <section class="section-pool">
+    <div class="container pool-inner">
+      <div class="pool-text reveal">
+        <span class="eyebrow">Espace Détente</span>
+        <h2>Piscine & Espaces Extérieurs</h2>
+        <div class="gold-divider" style="margin-left:0; max-width:200px"><span>〰</span></div>
+        <p>La résidence est construite autour d'une belle piscine, offrant un espace de détente privilégié avec vue sur le lac Mbolet. Profitez des espaces extérieurs paysagés et de la terrasse ombragée.</p>
+        <ul class="pool-features">
+          <li>🏊 Piscine privée accessible à tous les clients</li>
+          <li>🌴 Jardin paysagé avec végétation locale</li>
+          <li>☀️ Terrasse avec vue sur le lac</li>
+          <li>🍹 Service de boissons en terrasse</li>
+        </ul>
+      </div>
+      <div class="pool-real-photo reveal" style="transition-delay:0.2s">
+        <img src="/images/aerien.jpg" alt="Vue aérienne piscine et lac Mbolet" />
+        <div class="pool-photo-caption">Vue aérienne • Piscine & Lac Mbolet</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-booking-cta section-dark">
+    <div class="container" style="text-align:center">
+      <div class="reveal">
+        <h2 style="color:var(--creme-ecru); font-size:clamp(1.5rem,3vw,2.5rem); margin-bottom:1rem">Prêt à réserver votre séjour ?</h2>
+        <p style="color:rgba(245,240,230,0.7); max-width:500px; margin:0 auto 2rem">Contactez-nous pour vérifier nos disponibilités. Nous répondons rapidement à toutes vos demandes.</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap">
+          <a href="/contact" class="btn-primary">Formulaire de réservation</a>
+          <a href="tel:+24166050741" class="btn-outline">📞 Appeler directement</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* PAGE HERO */
+  .page-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #061525 0%, #0A233C 60%, #0d2d4a 100%);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+  }
+
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(195,155,65,0.08), transparent);
+  }
+
+  .page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent, rgba(10,35,60,0.4));
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--creme-ecru);
+  }
+
+  .page-hero-content .eyebrow {
+    font-family: var(--font-modern);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    display: block;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease both;
+  }
+
+  .page-hero-content h1 {
+    font-family: var(--font-titre);
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease 0.2s both;
+  }
+
+  .page-hero-content h1 em {
+    font-style: normal;
+    color: var(--or-sable);
+  }
+
+  .waves {
+    font-size: 1.5rem;
+    color: var(--or-sable);
+    letter-spacing: 0.5em;
+    margin: 1rem 0;
+    animation: fadeInUp 0.6s ease 0.4s both;
+  }
+
+  .page-hero-content p {
+    font-size: 1.05rem;
+    color: rgba(245,240,230,0.75);
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeInUp 0.6s ease 0.6s both;
+  }
+
+  /* AMENITIES BAR */
+  .amenities-bar {
+    background: var(--or-sable);
+    padding: 1.2rem 0;
+  }
+
+  .amenities-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .amenity {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-cinzel);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bleu-abyssal);
+  }
+
+  /* ROOMS SECTION */
+  .section-rooms {
+    padding: var(--section-pad);
+    background: var(--sable-fin);
+  }
+
+  .room-showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .room-visual {
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, var(--bleu-abyssal) 0%, #0d3a2e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(195,155,65,0.2);
+    position: relative;
+  }
+
+  .room-visual::after {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(195,155,65,0.1);
+  }
+
+  .room-visual-inner {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .room-icon-large {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .room-visual-name {
+    font-family: var(--font-cinzel);
+    font-size: 1.1rem;
+    color: var(--creme-ecru);
+    letter-spacing: 0.1em;
+  }
+
+  .room-visual-sub {
+    font-family: var(--font-modern);
+    font-size: 0.72rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    margin-top: 0.4rem;
+  }
+
+  .room-tag {
+    display: inline-block;
+    background: rgba(195,155,65,0.12);
+    color: var(--or-sable);
+    font-family: var(--font-cinzel);
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.9rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(195,155,65,0.3);
+  }
+
+  .room-details h3 {
+    font-family: var(--font-cinzel);
+    font-size: 2rem;
+    color: var(--bleu-abyssal);
+    margin-bottom: 1rem;
+  }
+
+  .room-desc {
+    color: #5a6a7a;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+
+  .room-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .feature {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+
+  .feature-icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+
+  .feature strong {
+    display: block;
+    font-family: var(--font-cinzel);
+    font-size: 0.8rem;
+    color: var(--bleu-abyssal);
+    margin-bottom: 0.2rem;
+  }
+
+  .feature p {
+    font-size: 0.8rem;
+    color: #8899aa;
+  }
+
+  .room-price-block {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(195,155,65,0.2);
+  }
+
+  .room-price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price-from {
+    font-size: 0.75rem;
+    color: #8899aa;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .price-amount {
+    font-family: var(--font-cinzel);
+    font-size: 1.6rem;
+    color: var(--or-sable);
+    line-height: 1.1;
+  }
+
+  .price-per {
+    font-size: 0.75rem;
+    color: #8899aa;
+  }
+
+  /* SUITES */
+  .section-suites {
+    padding: var(--section-pad);
+  }
+
+  .suites-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .suite-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(195,155,65,0.2);
+    padding: 2rem 1.5rem;
+    position: relative;
+    transition: transform 0.3s, background 0.3s;
+  }
+
+  .suite-card:hover {
+    transform: translateY(-4px);
+    background: rgba(195,155,65,0.06);
+  }
+
+  .suite-featured {
+    border-color: var(--or-sable);
+    background: rgba(195,155,65,0.07);
+  }
+
+  .suite-badge {
+    position: absolute;
+    top: -12px;
+    left: 1rem;
+    background: linear-gradient(135deg, var(--or-sable), var(--or-solaire));
+    color: var(--bleu-abyssal);
+    font-family: var(--font-cinzel);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 0.25rem 0.75rem;
+  }
+
+  .suite-number {
+    font-family: var(--font-titre);
+    font-size: 3rem;
+    color: rgba(195,155,65,0.1);
+    line-height: 1;
+    margin-bottom: -0.5rem;
+  }
+
+  .suite-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .suite-card h3 {
+    font-family: var(--font-cinzel);
+    font-size: 1rem;
+    color: var(--creme-ecru);
+    margin-bottom: 0.7rem;
+  }
+
+  .suite-card p {
+    font-size: 0.83rem;
+    color: rgba(245,240,230,0.6);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .suite-perks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .suite-perks li {
+    font-size: 0.78rem;
+    color: var(--or-sable);
+    font-family: var(--font-cinzel);
+    letter-spacing: 0.05em;
+  }
+
+  .suite-price {
+    font-family: var(--font-cinzel);
+    font-size: 0.85rem;
+    color: var(--or-sable);
+    padding-top: 1rem;
+    border-top: 1px solid rgba(195,155,65,0.2);
+  }
+
+  .suites-cta {
+    text-align: center;
+  }
+
+  /* POOL */
+  .section-pool {
+    padding: var(--section-pad);
+    background: var(--creme-ecru);
+  }
+
+  .pool-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .pool-text .eyebrow {
+    font-family: var(--font-modern);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .pool-text h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    color: var(--bleu-abyssal);
+    margin-bottom: 1rem;
+  }
+
+  .pool-text p {
+    color: #5a6a7a;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+
+  .pool-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .pool-features li {
+    color: var(--bleu-abyssal);
+    font-size: 0.92rem;
+  }
+
+  .pool-real-photo {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(195,155,65,0.2);
+  }
+  .pool-real-photo img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .pool-real-photo:hover img { transform: scale(1.04); }
+  .pool-photo-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(10,35,60,0.85));
+    padding: 1.5rem 1rem 0.8rem;
+    font-family: var(--font-cinzel);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+  }
+
+  .section-booking-cta {
+    padding: 5rem 2rem;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .suites-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .room-showcase,
+    .pool-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .suites-grid { grid-template-columns: 1fr; }
+    .room-features { grid-template-columns: 1fr; }
+  }
+</style>

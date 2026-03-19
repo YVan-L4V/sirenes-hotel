@@ -1,0 +1,397 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  activeNav?: string;
+}
+
+const { title, description = "Résidence Hôtelière Les Sirènes G&B — Lambaréné, Gabon. Hébergement de charme, restaurant gastronomique et excursions sur le lac Mbolet.", activeNav = '' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title} — Les Sirènes G&B</title>
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/images/logo.png" alt="Les Sirènes G&B" class="nav-logo-img" />
+      </a>
+      <style>
+        .nav-logo-img { filter: brightness(0) invert(1); }
+        .nav.scrolled .nav-logo-img { filter: none; }
+      </style>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/" class={activeNav === 'accueil' ? 'active' : ''}>Accueil</a></li>
+        <li><a href="/hebergement" class={activeNav === 'hebergement' ? 'active' : ''}>Hébergement</a></li>
+        <li><a href="/restaurant" class={activeNav === 'restaurant' ? 'active' : ''}>Restaurant</a></li>
+        <li><a href="/activites" class={activeNav === 'activites' ? 'active' : ''}>Activités</a></li>
+        <li><a href="/contact" class="nav-cta">Réserver</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <main>
+    <slot />
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+
+        <div class="footer-brand">
+          <img src="/images/logo.png" alt="Les Sirènes G&B" class="footer-logo" style="filter: brightness(0) invert(1);" />
+          <p>Une résidence d'exception au cœur du Gabon, entre fleuve Ogooué et lac Mbolet.</p>
+          <div class="footer-waves">〰〰〰</div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/hebergement">Hébergement</a></li>
+            <li><a href="/restaurant">Restaurant</a></li>
+            <li><a href="/activites">Activités</a></li>
+            <li><a href="/contact">Contact & Réservation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li>🏊 Piscine privée</li>
+            <li>🍽️ Restaurant Cuisines du Monde</li>
+            <li>🛶 Excursions en pirogue</li>
+            <li>🏝️ Île de la Tentation</li>
+            <li>📶 Wi-Fi gratuit</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            <p>Route de Fougamou, Quartier Atsié<br />Lambaréné, Gabon</p>
+            <p>BP 10, Lambaréné</p>
+            <p>
+              <a href="tel:+24166050741">+241 66 05 07 41</a><br />
+              <a href="tel:+24177530556">+241 77 53 05 56</a><br />
+              <a href="tel:+24174427474">+241 74 42 74 74</a>
+            </p>
+            <p><a href="mailto:infosirene@yahoo.fr">infosirene@yahoo.fr</a></p>
+          </address>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-monogram">G&B</p>
+        <p>© {new Date().getFullYear()} Résidence Hôtelière Les Sirènes G&B — Lambaréné, Gabon</p>
+        <p class="footer-tagline">Entre fleuve et étoiles</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<script>
+  // Sticky nav
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => {
+    nav?.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Mobile toggle
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle?.addEventListener('click', () => {
+    links?.classList.toggle('open');
+    toggle.classList.toggle('open');
+  });
+
+  // Animate on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+<style>
+  /* === NAV === */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    padding: 1.2rem 0;
+  }
+
+  .nav.scrolled {
+    background: rgba(10, 35, 60, 0.97);
+    backdrop-filter: blur(10px);
+    padding: 0.7rem 0;
+    box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+  }
+
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo-img {
+    height: 70px;
+    width: auto;
+    transition: height 0.3s;
+    filter: drop-shadow(0 2px 8px rgba(195,155,65,0.3));
+  }
+
+  .nav.scrolled .nav-logo-img {
+    height: 50px;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .nav-links a {
+    font-family: var(--font-cinzel);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--creme-ecru);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--or-sable);
+    transition: width 0.3s;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: var(--or-sable);
+  }
+
+  .nav-links a:hover::after,
+  .nav-links a.active::after {
+    width: 100%;
+  }
+
+  .nav-links .nav-cta {
+    padding: 0.6rem 1.5rem;
+    border: 1px solid var(--or-sable);
+    color: var(--or-sable);
+    transition: all 0.3s;
+  }
+
+  .nav-links .nav-cta::after { display: none; }
+
+  .nav-links .nav-cta:hover {
+    background: var(--or-sable);
+    color: var(--bleu-abyssal);
+  }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: var(--creme-ecru);
+    transition: all 0.3s;
+  }
+
+  /* === FOOTER === */
+  .footer {
+    background: var(--bleu-abyssal);
+    color: var(--creme-ecru);
+  }
+
+  .footer-top {
+    padding: 5rem 0 3rem;
+    border-bottom: 1px solid rgba(195,155,65,0.2);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.9rem;
+    opacity: 0.75;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .footer-waves {
+    color: var(--or-sable);
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+  }
+
+  .footer-col h4 {
+    font-family: var(--font-cinzel);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .footer-col ul li,
+  .footer-col address p {
+    font-size: 0.88rem;
+    opacity: 0.8;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-col a {
+    color: var(--creme-ecru);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s, color 0.3s;
+  }
+
+  .footer-col a:hover {
+    opacity: 1;
+    color: var(--or-sable);
+  }
+
+  .footer-bottom {
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+
+  .footer-monogram {
+    font-family: var(--font-titre);
+    font-size: 1.5rem;
+    color: var(--or-sable);
+    margin-bottom: 0.5rem;
+    opacity: 0.4;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+
+  .footer-tagline {
+    font-family: var(--font-cinzel);
+    font-style: italic;
+    color: var(--or-sable) !important;
+    opacity: 0.6 !important;
+    margin-top: 0.3rem;
+    font-size: 0.82rem !important;
+  }
+
+  /* === SCROLL REVEAL === */
+  .reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .nav-toggle { display: flex; }
+
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 320px;
+      height: 100vh;
+      background: var(--bleu-abyssal);
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      transition: right 0.4s ease;
+      border-left: 1px solid rgba(195,155,65,0.2);
+    }
+
+    .nav-links.open {
+      right: 0;
+    }
+
+    .nav-links a {
+      font-size: 1rem;
+    }
+
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>

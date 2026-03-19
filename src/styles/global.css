@@ -1,0 +1,236 @@
+/* ============================================
+   LES SIRÈNES G&B — Global Design System
+   Charte Graphique officielle
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* === CSS VARIABLES === */
+:root {
+  /* Palette "Terre & Eau" */
+  --bleu-abyssal: #0A233C;
+  --bleu-ogooue: #1A365D;
+  --or-sable: #C39B41;
+  --or-solaire: #D4AF37;
+  --vert-canopee: #2D4F1E;
+  --vert-papyrus: #4A5D23;
+  --creme-ecru: #F5F0E6;
+  --sable-fin: #FAF9F6;
+
+  /* Typographie */
+  --font-titre: 'Cinzel Decorative', serif;
+  --font-cinzel: 'Cinzel', serif;
+  --font-modern: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Spacing */
+  --section-pad: 6rem 2rem;
+  --container-max: 1200px;
+}
+
+/* === RESET === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--sable-fin);
+  color: var(--bleu-abyssal);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3 {
+  font-family: var(--font-cinzel);
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+
+.display-title {
+  font-family: var(--font-titre);
+  text-transform: uppercase;
+}
+
+/* === CONTAINER === */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* === GOLD DIVIDER === */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem auto;
+  max-width: 300px;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--or-sable));
+}
+
+.gold-divider::after {
+  background: linear-gradient(90deg, var(--or-sable), transparent);
+}
+
+.gold-divider span {
+  color: var(--or-sable);
+  font-size: 1.2rem;
+}
+
+/* === WAVE ORNAMENT === */
+.wave-ornament {
+  font-size: 2rem;
+  color: var(--or-sable);
+  letter-spacing: 0.3em;
+}
+
+/* === BUTTONS === */
+.btn-primary {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: linear-gradient(135deg, var(--or-sable), var(--or-solaire));
+  color: var(--bleu-abyssal);
+  font-family: var(--font-cinzel);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.15);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-primary:hover::after {
+  opacity: 1;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(195, 155, 65, 0.4);
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: transparent;
+  color: var(--or-sable);
+  font-family: var(--font-cinzel);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid var(--or-sable);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--or-sable);
+  color: var(--bleu-abyssal);
+}
+
+/* === SECTION HEADERS === */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header .eyebrow {
+  font-family: var(--font-modern);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--or-sable);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  font-family: var(--font-cinzel);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: var(--bleu-abyssal);
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #5a6a7a;
+  font-size: 1.05rem;
+}
+
+/* === DARK SECTION === */
+.section-dark {
+  background: var(--bleu-abyssal);
+  color: var(--creme-ecru);
+}
+
+.section-dark .section-header h2 {
+  color: var(--creme-ecru);
+}
+
+.section-dark .section-header p {
+  color: rgba(245, 240, 230, 0.7);
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-in {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--creme-ecru);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--or-sable);
+}

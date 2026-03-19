@@ -1,0 +1,572 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Restaurant" activeNav="restaurant" description="Restaurant Cuisines du Monde — Terrasse sur le lac Mbolet, spécialités gabonaises et cuisine européenne. Les Sirènes G&B, Lambaréné.">
+
+  <!-- HERO -->
+  <section class="page-hero" style="background-image:url('/images/restaurant2.jpg'); background-size:cover; background-position:center top;">
+    <div class="page-hero-bg" style="background:none;"></div>
+    <div class="page-hero-content">
+      <span class="eyebrow">Restaurant</span>
+      <h1>Cuisines<br /><em>du Monde</em></h1>
+      <div class="waves">〰〰〰</div>
+      <p>Saveurs gabonaises et européennes sur une terrasse surplombant le lac Mbolet.</p>
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCE CULINAIRE -->
+  <section class="section-experience">
+    <div class="container experience-grid">
+      <div class="exp-card reveal">
+        <div class="exp-icon">🌍</div>
+        <h3>Deux Cuisines</h3>
+        <p>Gastronomie gabonaise authentique et spécialités européennes, pour satisfaire toutes les envies.</p>
+      </div>
+      <div class="exp-card reveal" style="transition-delay:0.15s">
+        <div class="exp-icon">🌊</div>
+        <h3>Vue sur le Lac</h3>
+        <p>La terrasse du restaurant surplombe le majestueux lac Mbolet. Un cadre unique à Lambaréné.</p>
+      </div>
+      <div class="exp-card reveal" style="transition-delay:0.3s">
+        <div class="exp-icon">🌿</div>
+        <h3>Produits Locaux</h3>
+        <p>Poisson frais du lac, épices locales, chocolat de brousse (odika). Le meilleur du terroir gabonais.</p>
+      </div>
+      <div class="exp-card reveal" style="transition-delay:0.45s">
+        <div class="exp-icon">💫</div>
+        <h3>Prix Accessible</h3>
+        <p>Un repas complet pour environ 15 000 FCFA. La gastronomie locale à un prix juste.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section-menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Notre Carte</span>
+        <h2>La Carte des Saveurs</h2>
+        <div class="gold-divider"><span>〰</span></div>
+        <p>Une sélection de plats qui racontent l'histoire culinaire du Gabon, enrichie de touches européennes.</p>
+      </div>
+
+      <!-- SPÉCIALITÉS GABONAISES -->
+      <div class="menu-section reveal">
+        <div class="menu-section-header">
+          <div class="menu-section-line"></div>
+          <h3>🇬🇦 Spécialités Gabonaises</h3>
+          <div class="menu-section-line"></div>
+        </div>
+
+        <div class="menu-grid">
+          <div class="menu-item featured-dish">
+            <div class="dish-header">
+              <div>
+                <h4>Carpe à l'Odika</h4>
+                <p class="dish-subtitle">Carpe au chocolat de brousse</p>
+              </div>
+              <div class="dish-badge">Signature</div>
+            </div>
+            <p class="dish-desc">Notre plat signature. La carpe fraîche du lac cuisinée avec l'odika, un chocolat de brousse gabonais au goût unique et profond. Une explosion de saveurs authentiques.</p>
+            <div class="dish-tags">
+              <span>🐟 Poisson frais</span>
+              <span>🌿 Produit local</span>
+              <span>⭐ Incontournable</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="dish-header">
+              <h4>Poisson en Paquet</h4>
+            </div>
+            <p class="dish-desc">Poisson enveloppé dans des feuilles de bananier et cuit à l'étouffée avec des épices locales. Technique traditionnelle gabonaise préservant tous les arômes.</p>
+            <div class="dish-tags">
+              <span>🍃 Feuilles de bananier</span>
+              <span>🌶️ Épices locales</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="dish-header">
+              <h4>Viande de Brousse</h4>
+              <span class="dish-availability">Selon arrivage</span>
+            </div>
+            <p class="dish-desc">Gibier local préparé selon les recettes traditionnelles gabonaises. Une expérience culinaire rare, disponible en fonction des arrivages locaux.</p>
+            <div class="dish-tags">
+              <span>🌲 Gibier local</span>
+              <span>📅 Selon saison</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="dish-header">
+              <h4>Cuisine Africaine Variée</h4>
+            </div>
+            <p class="dish-desc">Découvrez les saveurs variées de l'Afrique Centrale à travers nos plats du jour préparés avec des ingrédients frais du marché de Lambaréné.</p>
+            <div class="dish-tags">
+              <span>🌍 Afrique Centrale</span>
+              <span>🛒 Marché local</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUISINE EUROPÉENNE -->
+      <div class="menu-section reveal">
+        <div class="menu-section-header">
+          <div class="menu-section-line"></div>
+          <h3>🇪🇺 Cuisine Européenne</h3>
+          <div class="menu-section-line"></div>
+        </div>
+
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="dish-header">
+              <h4>Plats du Jour Européens</h4>
+            </div>
+            <p class="dish-desc">Chaque jour, notre chef propose des plats de la cuisine européenne classique adaptés aux goûts et aux saisons. Idéal pour les voyageurs souhaitant un repas familier.</p>
+            <div class="dish-tags">
+              <span>🍽️ Cuisine classique</span>
+              <span>📅 Renouvelé chaque jour</span>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="dish-header">
+              <h4>Grill & Viandes</h4>
+            </div>
+            <p class="dish-desc">Viandes grillées selon les techniques européennes, accompagnées de légumes frais et sauces maison. La qualité des produits locaux au service d'une cuisine simple et généreuse.</p>
+            <div class="dish-tags">
+              <span>🥩 Viandes grillées</span>
+              <span>🥗 Légumes frais</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRIX MOYEN -->
+      <div class="menu-price-note reveal">
+        <div class="price-note-inner">
+          <div class="price-note-waves">〰〰〰</div>
+          <p>Prix moyen par repas</p>
+          <div class="price-note-amount">15 000 FCFA</div>
+          <p class="price-note-sub">Hors boissons • Prix indicatifs pouvant varier</p>
+          <div class="price-note-waves">〰〰〰</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TERRASSE -->
+  <section class="section-terrasse section-dark">
+    <div class="container terrasse-inner">
+      <div class="terrasse-visual reveal">
+        <div class="terrasse-real-photo">
+          <img src="/images/restaurant.jpg" alt="Restaurant terrasse Les Sirènes G&B vue sur lac Mbolet" />
+          <div class="terrasse-photo-caption">Terrasse • Vue Lac Mbolet</div>
+        </div>
+      </div>
+
+      <div class="terrasse-text reveal" style="transition-delay:0.2s">
+        <span class="eyebrow" style="color:var(--or-sable)">Cadre Exceptionnel</span>
+        <h2 style="color:var(--creme-ecru)">La Terrasse du Lac</h2>
+        <div class="gold-divider" style="margin-left:0; max-width:200px"><span>〰</span></div>
+
+        <p>Perchée au-dessus du lac Mbolet, notre terrasse est le cœur battant de la résidence. Au coucher du soleil, les reflets dorés sur l'eau créent une ambiance unique et mémorable.</p>
+
+        <p style="margin-top: 1rem">Chaque repas devient ici une expérience sensorielle complète : la beauté du lac, les sons de la nature gabonaise, et les arômes de notre cuisine.</p>
+
+        <div class="terrasse-hours">
+          <h4>Horaires</h4>
+          <div class="hours-grid">
+            <div class="hours-item">
+              <span>🌅 Petit-déjeuner</span>
+              <span>7h00 – 10h00</span>
+            </div>
+            <div class="hours-item">
+              <span>☀️ Déjeuner</span>
+              <span>12h00 – 14h30</span>
+            </div>
+            <div class="hours-item">
+              <span>🌙 Dîner</span>
+              <span>19h00 – 22h00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RÉSERVATION TABLE -->
+  <section class="section-table-booking">
+    <div class="container" style="text-align:center">
+      <div class="reveal">
+        <span class="eyebrow">Réservation</span>
+        <h2>Réserver une Table</h2>
+        <div class="gold-divider"><span>〰</span></div>
+        <p style="max-width:500px; margin:0 auto 2rem; color:#5a6a7a">Pour une réservation de table ou pour toute question sur notre menu, contactez-nous directement.</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap">
+          <a href="tel:+24166050741" class="btn-primary">📞 Appeler le restaurant</a>
+          <a href="mailto:infosirene@yahoo.fr" class="btn-outline">✉️ infosirene@yahoo.fr</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* PAGE HERO */
+  .page-hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #061525 0%, #0d2e15 50%, #0A233C 100%);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+  }
+
+  .page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse 70% 50% at 30% 50%, rgba(45,79,30,0.15), transparent),
+      radial-gradient(ellipse 50% 70% at 80% 40%, rgba(195,155,65,0.07), transparent);
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--creme-ecru);
+    animation: fadeInUp 0.8s ease both;
+  }
+
+  .eyebrow {
+    font-family: var(--font-modern);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .page-hero-content h1 {
+    font-family: var(--font-titre);
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .page-hero-content h1 em {
+    font-style: normal;
+    color: var(--or-sable);
+  }
+
+  .waves {
+    font-size: 1.5rem;
+    color: var(--or-sable);
+    letter-spacing: 0.5em;
+    margin: 1rem 0;
+  }
+
+  .page-hero-content p {
+    color: rgba(245,240,230,0.75);
+    font-size: 1.05rem;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  /* EXPERIENCE */
+  .section-experience {
+    background: var(--bleu-abyssal);
+    padding: 3.5rem 0;
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .exp-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-right: 1px solid rgba(195,155,65,0.1);
+  }
+
+  .exp-card:last-child {
+    border-right: none;
+  }
+
+  .exp-icon {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .exp-card h3 {
+    font-family: var(--font-cinzel);
+    font-size: 0.95rem;
+    color: var(--creme-ecru);
+    margin-bottom: 0.5rem;
+  }
+
+  .exp-card p {
+    font-size: 0.82rem;
+    color: rgba(245,240,230,0.6);
+    line-height: 1.7;
+  }
+
+  /* MENU */
+  .section-menu {
+    padding: var(--section-pad);
+    background: var(--sable-fin);
+  }
+
+  .menu-section {
+    margin-bottom: 3rem;
+  }
+
+  .menu-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .menu-section-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(195,155,65,0.3), transparent);
+  }
+
+  .menu-section-header h3 {
+    font-family: var(--font-cinzel);
+    font-size: 1.1rem;
+    color: var(--bleu-abyssal);
+    white-space: nowrap;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .menu-item {
+    background: white;
+    border: 1px solid rgba(195,155,65,0.12);
+    padding: 1.8rem;
+    transition: box-shadow 0.3s;
+  }
+
+  .menu-item:hover {
+    box-shadow: 0 8px 30px rgba(10,35,60,0.08);
+  }
+
+  .featured-dish {
+    border-color: var(--or-sable);
+    background: linear-gradient(160deg, #fff 0%, #fdf9f0 100%);
+  }
+
+  .dish-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.7rem;
+  }
+
+  .menu-item h4 {
+    font-family: var(--font-cinzel);
+    font-size: 1.05rem;
+    color: var(--bleu-abyssal);
+    margin-bottom: 0.2rem;
+  }
+
+  .dish-subtitle {
+    font-size: 0.78rem;
+    color: var(--or-sable);
+    font-style: italic;
+  }
+
+  .dish-badge {
+    background: linear-gradient(135deg, var(--or-sable), var(--or-solaire));
+    color: var(--bleu-abyssal);
+    font-family: var(--font-cinzel);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    padding: 0.25rem 0.7rem;
+    white-space: nowrap;
+  }
+
+  .dish-availability {
+    font-size: 0.72rem;
+    color: var(--vert-canopee);
+    font-family: var(--font-modern);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .dish-desc {
+    font-size: 0.88rem;
+    color: #5a6a7a;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+
+  .dish-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .dish-tags span {
+    font-size: 0.72rem;
+    color: var(--bleu-ogooue);
+    background: rgba(26,54,93,0.06);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+  }
+
+  /* PRICE NOTE */
+  .menu-price-note {
+    margin-top: 3rem;
+  }
+
+  .price-note-inner {
+    text-align: center;
+    border: 1px solid rgba(195,155,65,0.3);
+    padding: 3rem;
+    background: linear-gradient(160deg, rgba(195,155,65,0.04), transparent);
+  }
+
+  .price-note-waves {
+    font-size: 1.2rem;
+    color: var(--or-sable);
+    letter-spacing: 0.5em;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+  }
+
+  .price-note-inner p {
+    font-family: var(--font-cinzel);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8899aa;
+    margin-bottom: 0.5rem;
+  }
+
+  .price-note-amount {
+    font-family: var(--font-titre);
+    font-size: 2.5rem;
+    color: var(--or-sable);
+    margin: 0.5rem 0 1rem;
+    line-height: 1;
+  }
+
+  .price-note-sub {
+    font-size: 0.78rem !important;
+    color: #aaa !important;
+    font-style: italic;
+  }
+
+  /* TERRASSE */
+  .section-terrasse {
+    padding: var(--section-pad);
+  }
+
+  .terrasse-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .terrasse-real-photo {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    border: 2px solid rgba(195,155,65,0.2);
+  }
+  .terrasse-real-photo img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.5s ease;
+  }
+  .terrasse-real-photo:hover img { transform: scale(1.04); }
+  .terrasse-photo-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(10,35,60,0.85));
+    padding: 1.5rem 1rem 0.8rem;
+    font-family: var(--font-cinzel); font-size: 0.75rem;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--or-sable);
+  }
+
+  .terrasse-text p {
+    color: rgba(245,240,230,0.75);
+    line-height: 1.8;
+  }
+
+  .terrasse-hours {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(195,155,65,0.2);
+    background: rgba(195,155,65,0.05);
+  }
+
+  .terrasse-hours h4 {
+    font-family: var(--font-cinzel);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    margin-bottom: 1rem;
+  }
+
+  .hours-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hours-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: rgba(245,240,230,0.7);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(195,155,65,0.1);
+  }
+
+  .hours-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* TABLE BOOKING */
+  .section-table-booking {
+    padding: var(--section-pad);
+    background: var(--sable-fin);
+  }
+
+  @media (max-width: 900px) {
+    .experience-grid { grid-template-columns: repeat(2, 1fr); }
+    .menu-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    .experience-grid { grid-template-columns: 1fr; }
+    .terrasse-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .exp-card { border-right: none; border-bottom: 1px solid rgba(195,155,65,0.1); }
+    .exp-card:last-child { border-bottom: none; }
+  }
+</style>

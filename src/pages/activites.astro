@@ -1,0 +1,538 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Activités" activeNav="activites" description="Activités et excursions à Les Sirènes G&B — Pirogue sur le lac Mbolet, île de la Tentation, piscine. Lambaréné, Gabon.">
+
+  <!-- HERO -->
+  <section class="page-hero" style="background-image:url('/images/vue4.jpg'); background-size:cover; background-position:center;">
+    <div class="page-hero-bg" style="background:none;"></div>
+    <div class="page-hero-content">
+      <span class="eyebrow">Activités & Tourisme</span>
+      <h1>Explorez<br /><em>le Gabon</em></h1>
+      <div class="waves">〰〰〰</div>
+      <p>Excursions sur le lac Mbolet, l'île de la Tentation et les trésors du fleuve Ogooué.</p>
+    </div>
+  </section>
+
+  <!-- ACTIVITÉS PRINCIPALES -->
+  <section class="section-activities">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Nos Excursions</span>
+        <h2>Aventures sur l'Eau</h2>
+        <div class="gold-divider"><span>〰</span></div>
+      </div>
+
+      <!-- PIROGUE -->
+      <div class="activity-feature reveal">
+        <div class="activity-real-photo">
+          <img src="/images/vue3.jpg" alt="Lac Mbolet - excursion en pirogue depuis Les Sirènes G&B" />
+          <div class="act-photo-caption">Lac Mbolet • Lambaréné</div>
+        </div>
+        <div class="activity-text">
+          <div class="activity-number">01</div>
+          <h3>Excursions en Pirogue</h3>
+          <p>Glissez silencieusement sur les eaux du lac Mbolet ou du majestueux fleuve Ogooué à bord d'une pirogue traditionnelle. Découvrez la faune aquatique, les oiseaux tropicaux et les rives couvertes de végétation luxuriante.</p>
+          <p style="margin-top:1rem">Chaque sortie est une immersion totale dans la nature gabonaise, guidée par des locaux connaissant parfaitement les eaux et la faune de la région.</p>
+          <div class="activity-highlights">
+            <div class="highlight">🐦 Observation des oiseaux</div>
+            <div class="highlight">🌿 Végétation tropicale</div>
+            <div class="highlight">🐊 Faune aquatique</div>
+            <div class="highlight">🌅 Lever/coucher de soleil</div>
+          </div>
+          <a href="/contact" class="btn-primary" style="margin-top:1.5rem; display:inline-block">Organiser une sortie</a>
+        </div>
+      </div>
+
+      <!-- ÎLE DE LA TENTATION -->
+      <div class="activity-feature activity-feature-reverse reveal">
+        <div class="activity-text">
+          <div class="activity-number">02</div>
+          <h3>L'Île de la Tentation</h3>
+          <p>Embarquez pour une aventure unique jusqu'à l'île de la Tentation, un joyau caché accessible uniquement depuis notre résidence. Une journée de pique-nique dans un cadre sauvage et préservé.</p>
+          <p style="margin-top:1rem">Profitez du calme absolu de cet îlot entouré d'eau, avec un pique-nique préparé par notre cuisine pour une expérience mémorable en pleine nature.</p>
+          <div class="activity-highlights">
+            <div class="highlight">🏝️ Île privée</div>
+            <div class="highlight">🧺 Pique-nique inclus</div>
+            <div class="highlight">🌊 Baignade possible</div>
+            <div class="highlight">📸 Cadre exceptionnel</div>
+          </div>
+          <a href="/contact" class="btn-primary" style="margin-top:1.5rem; display:inline-block">Réserver l'excursion</a>
+        </div>
+        <div class="activity-real-photo activity-real-photo-alt">
+          <img src="/images/paysage.jpg" alt="Île de la Tentation - lac Mbolet Lambaréné" />
+          <div class="act-photo-caption">Île de la Tentation • Circuit exclusif</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PISCINE -->
+  <section class="section-pool section-dark">
+    <div class="container">
+      <div class="pool-photo-layout">
+        <div class="reveal" style="flex:1; min-width:280px">
+          <span class="eyebrow" style="color:var(--or-sable)">Sur Place</span>
+          <h2 style="color:var(--creme-ecru); font-family:var(--font-cinzel); font-size:clamp(1.6rem,3vw,2.4rem); margin-bottom:1rem">La Piscine de la Résidence</h2>
+          <div class="gold-divider" style="margin-left:0; max-width:180px"><span>〰</span></div>
+          <p style="color:rgba(245,240,230,0.7); line-height:1.8; margin-bottom:2rem">Au cœur de la résidence, la piscine est l'élément central autour duquel tout est construit. Profitez de cet espace de détente avec une vue imprenable sur le lac Mbolet.</p>
+          <div class="pool-features-grid reveal">
+            <div class="pool-feature">
+              <span>🏊</span>
+              <h4>Piscine privée</h4>
+              <p>Réservée aux clients de la résidence</p>
+            </div>
+            <div class="pool-feature">
+              <span>🌊</span>
+              <h4>Vue sur le Lac</h4>
+              <p>La piscine est construite avec vue sur le lac Mbolet</p>
+            </div>
+            <div class="pool-feature">
+              <span>🍹</span>
+              <h4>Service en Terrasse</h4>
+              <p>Boissons et collations disponibles au bord de l'eau</p>
+            </div>
+            <div class="pool-feature">
+              <span>☀️</span>
+              <h4>Accès Journée</h4>
+              <p>Disponible toute la journée pour les résidents</p>
+            </div>
+          </div>
+        </div>
+        <div class="pool-photo-side reveal" style="transition-delay:0.2s; flex:1; min-width:280px">
+          <img src="/images/hero_piscine.jpg" alt="Piscine de la résidence Les Sirènes G&B avec palmiers" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NATURE & ENVIRONNEMENT -->
+  <section class="section-nature">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Environnement</span>
+        <h2>Le Cadre Naturel de Lambaréné</h2>
+        <div class="gold-divider"><span>〰</span></div>
+        <p>Lambaréné est une ville d'exception, au carrefour du fleuve Ogooué et du lac Mbolet. La résidence Les Sirènes G&B vous place au cœur de ce patrimoine naturel unique.</p>
+      </div>
+
+      <div class="nature-grid">
+        <div class="nature-card-photo reveal">
+          <img src="/images/vue1.jpg" alt="Lac Mbolet vu depuis la résidence Les Sirènes G&B" />
+          <div class="nature-card-overlay">
+            <h3>Lac Mbolet</h3>
+            <p>Un lac d'eau douce d'une beauté sereine, accessible depuis la résidence.</p>
+          </div>
+        </div>
+        <div class="nature-card-photo reveal" style="transition-delay:0.15s">
+          <img src="/images/vue2.jpg" alt="Fleuve Ogooué et végétation tropicale" />
+          <div class="nature-card-overlay">
+            <h3>Fleuve Ogooué</h3>
+            <p>Le grand fleuve du Gabon et ses rives couvertes de forêt tropicale dense.</p>
+          </div>
+        </div>
+        <div class="nature-card-photo reveal" style="transition-delay:0.3s">
+          <img src="/images/vue4.jpg" alt="Vue panoramique sur le lac Mbolet" />
+          <div class="nature-card-overlay">
+            <h3>Faune & Flore</h3>
+            <p>Un écosystème riche en oiseaux tropicaux, reptiles et mammifères.</p>
+          </div>
+        </div>
+        <div class="nature-card-photo reveal" style="transition-delay:0.45s">
+          <img src="/images/coucher_soleil.jpg" alt="Coucher de soleil sur le lac Mbolet" />
+          <div class="nature-card-overlay">
+            <h3>Golden Hour</h3>
+            <p>Couchers de soleil spectaculaires sur le lac, chaque soir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-activities-cta section-dark">
+    <div class="container" style="text-align:center">
+      <div class="reveal">
+        <h2 style="color:var(--creme-ecru); font-size:clamp(1.5rem,3vw,2.5rem); margin-bottom:1rem">Planifier vos activités</h2>
+        <p style="color:rgba(245,240,230,0.7); max-width:500px; margin:0 auto 2rem">Contactez-nous pour organiser vos excursions et activités. Nous adaptons chaque sortie à vos envies.</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap">
+          <a href="/contact" class="btn-primary">Planifier mon séjour</a>
+          <a href="tel:+24166050741" class="btn-outline">📞 Nous appeler</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .page-hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #061525 0%, #0d3a2e 50%, #0A233C 100%);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+  }
+
+  .page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse 60% 60% at 40% 60%, rgba(45,79,30,0.2), transparent),
+      radial-gradient(ellipse 50% 50% at 80% 30%, rgba(195,155,65,0.07), transparent);
+  }
+
+  .page-hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--creme-ecru);
+    animation: fadeInUp 0.8s ease both;
+  }
+
+  .eyebrow {
+    font-family: var(--font-modern);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .page-hero-content h1 {
+    font-family: var(--font-titre);
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .page-hero-content h1 em {
+    font-style: normal;
+    color: var(--or-sable);
+  }
+
+  .waves {
+    font-size: 1.5rem;
+    color: var(--or-sable);
+    letter-spacing: 0.5em;
+    margin: 1rem 0;
+  }
+
+  .page-hero-content p {
+    color: rgba(245,240,230,0.75);
+    font-size: 1.05rem;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  /* ACTIVITIES */
+  .section-activities {
+    padding: var(--section-pad);
+    background: var(--sable-fin);
+  }
+
+  .activity-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .activity-feature-reverse {
+    direction: rtl;
+  }
+
+  .activity-feature-reverse > * {
+    direction: ltr;
+  }
+
+  .activity-visual {
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, var(--bleu-abyssal) 0%, #0d3a2e 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(195,155,65,0.2);
+    position: relative;
+  }
+
+  .activity-visual::after {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(195,155,65,0.08);
+  }
+
+  .activity-visual-alt {
+    background: linear-gradient(135deg, #0d3a2e 0%, var(--bleu-abyssal) 100%);
+  }
+
+  .activity-visual-inner {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .av-icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .av-title {
+    font-family: var(--font-cinzel);
+    font-size: 1.2rem;
+    color: var(--creme-ecru);
+    margin-bottom: 0.3rem;
+  }
+
+  .av-sub {
+    font-family: var(--font-modern);
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    margin-bottom: 0.8rem;
+  }
+
+  .av-waves {
+    font-size: 1rem;
+    color: var(--or-sable);
+    letter-spacing: 0.4em;
+    opacity: 0.4;
+  }
+
+  .activity-number {
+    font-family: var(--font-titre);
+    font-size: 4rem;
+    color: rgba(195,155,65,0.1);
+    line-height: 1;
+    margin-bottom: -0.5rem;
+  }
+
+  .activity-text h3 {
+    font-family: var(--font-cinzel);
+    font-size: 1.8rem;
+    color: var(--bleu-abyssal);
+    margin-bottom: 1rem;
+  }
+
+  .activity-text p {
+    color: #5a6a7a;
+    line-height: 1.8;
+  }
+
+  .activity-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+  }
+
+  .highlight {
+    background: rgba(10,35,60,0.04);
+    border: 1px solid rgba(195,155,65,0.12);
+    padding: 0.6rem 0.8rem;
+    font-size: 0.82rem;
+    color: var(--bleu-abyssal);
+    font-family: var(--font-cinzel);
+  }
+
+  /* POOL */
+  .section-pool {
+    padding: var(--section-pad);
+  }
+
+  .pool-features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .pool-feature {
+    text-align: center;
+    padding: 2rem 1rem;
+    border: 1px solid rgba(195,155,65,0.15);
+    background: rgba(255,255,255,0.04);
+    transition: background 0.3s;
+  }
+
+  .pool-feature:hover {
+    background: rgba(195,155,65,0.07);
+  }
+
+  .pool-feature span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+
+  .pool-feature h4 {
+    font-family: var(--font-cinzel);
+    font-size: 0.9rem;
+    color: var(--creme-ecru);
+    margin-bottom: 0.5rem;
+  }
+
+  .pool-feature p {
+    font-size: 0.8rem;
+    color: rgba(245,240,230,0.55);
+    line-height: 1.6;
+  }
+
+  /* NATURE */
+  .section-nature {
+    padding: var(--section-pad);
+    background: var(--creme-ecru);
+  }
+
+  .nature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .nature-card {
+    background: white;
+    border: 1px solid rgba(195,155,65,0.12);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .nature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(10,35,60,0.08);
+  }
+
+  .nature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .nature-card h3 {
+    font-family: var(--font-cinzel);
+    font-size: 1rem;
+    color: var(--bleu-abyssal);
+    margin-bottom: 0.7rem;
+  }
+
+  .nature-card p {
+    font-size: 0.85rem;
+    color: #5a6a7a;
+    line-height: 1.7;
+  }
+
+  /* === REAL ACTIVITY PHOTOS === */
+  .activity-real-photo {
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(195,155,65,0.2);
+  }
+
+  .activity-real-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .activity-real-photo:hover img { transform: scale(1.05); }
+
+  .activity-real-photo-alt { }
+
+  .act-photo-caption {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(10,35,60,0.85));
+    padding: 1.5rem 1rem 0.8rem;
+    font-family: var(--font-cinzel); font-size: 0.75rem;
+    letter-spacing: 0.2em; text-transform: uppercase; color: var(--or-sable);
+  }
+
+  /* === POOL PHOTO LAYOUT === */
+  .pool-photo-layout {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .pool-photo-side {
+    overflow: hidden;
+    border: 2px solid rgba(195,155,65,0.2);
+  }
+
+  .pool-photo-side img {
+    width: 100%; height: 400px;
+    object-fit: cover; display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .pool-photo-side:hover img { transform: scale(1.04); }
+
+  /* === NATURE PHOTO CARDS === */
+  .nature-card-photo {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/2;
+    cursor: pointer;
+  }
+
+  .nature-card-photo img {
+    width: 100%; height: 100%;
+    object-fit: cover; display: block;
+    transition: transform 0.5s ease;
+  }
+
+  .nature-card-photo:hover img { transform: scale(1.06); }
+
+  .nature-card-overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(10,35,60,0.88));
+    padding: 2rem 1.2rem 1rem;
+    transform: translateY(4px);
+    transition: transform 0.3s;
+  }
+
+  .nature-card-photo:hover .nature-card-overlay { transform: translateY(0); }
+
+  .nature-card-overlay h3 {
+    font-family: var(--font-cinzel);
+    font-size: 1rem; color: var(--creme-ecru);
+    margin-bottom: 0.4rem;
+  }
+
+  .nature-card-overlay p {
+    font-size: 0.82rem;
+    color: rgba(245,240,230,0.75);
+    line-height: 1.5;
+  }
+
+  .section-pool { padding: var(--section-pad); }
+
+  @media (max-width: 900px) {
+    .pool-features-grid,
+    .nature-grid { grid-template-columns: repeat(2, 1fr); }
+    .activity-feature { gap: 2rem; }
+  }
+
+  @media (max-width: 768px) {
+    .activity-feature,
+    .activity-feature-reverse {
+      grid-template-columns: 1fr;
+      direction: ltr;
+    }
+
+    .pool-features-grid,
+    .nature-grid { grid-template-columns: 1fr; }
+    .activity-highlights { grid-template-columns: 1fr; }
+  }
+</style>
