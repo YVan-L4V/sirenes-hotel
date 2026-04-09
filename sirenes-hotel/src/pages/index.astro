@@ -1,0 +1,683 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Accueil" activeNav="accueil">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg-pattern"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow animate-in" style="animation-delay:0.2s">Lambaréné • Gabon • Lac Mbolet</p>
+      <h1 class="hero-title animate-in" style="animation-delay:0.5s">
+        Les Sirènes<br /><em>G&B</em>
+      </h1>
+      <div class="hero-waves animate-in" style="animation-delay:0.8s">〰〰〰</div>
+      <p class="hero-subtitle animate-in" style="animation-delay:1s">
+        Une résidence d'exception entre fleuve Ogooué et lac Mbolet.<br />
+        Là où la nature gabonaise rencontre l'art de vivre.
+      </p>
+      <div class="hero-ctas animate-in" style="animation-delay:1.2s">
+        <a href="/hebergement" class="btn-primary">Découvrir les chambres</a>
+        <a href="/contact" class="btn-outline">Réserver maintenant</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Découvrir</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- INTRO CHIFFRES -->
+  <section class="section-stats">
+    <div class="container stats-grid">
+      <div class="stat reveal">
+        <span class="stat-number">4</span>
+        <span class="stat-label">Suites avec salon</span>
+      </div>
+      <div class="stat-divider">〰</div>
+      <div class="stat reveal" style="transition-delay:0.15s">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Cuisines du Monde</span>
+      </div>
+      <div class="stat-divider">〰</div>
+      <div class="stat reveal" style="transition-delay:0.3s">
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Vue sur le lac Mbolet</span>
+      </div>
+      <div class="stat-divider">〰</div>
+      <div class="stat reveal" style="transition-delay:0.45s">
+        <span class="stat-number">1</span>
+        <span class="stat-label">Piscine privée</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HÉBERGEMENT APERÇU -->
+  <section class="section-preview section-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Hébergement</span>
+        <h2>Votre Refuge au Gabon</h2>
+        <div class="gold-divider"><span>〰</span></div>
+        <p>Chambres climatisées, suites avec salon privé, équipements modernes dans un cadre somptueux au bord du lac.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card reveal" style="transition-delay:0.1s">
+          <div class="card-icon">🛏️</div>
+          <h3>Chambres Classiques</h3>
+          <p>Confort moderne, climatisation, salle de bain privée, télévision et réfrigérateur.</p>
+          <p class="card-price">À partir de <strong>35 500 FCFA</strong></p>
+          <a href="/hebergement" class="card-link">Voir les chambres →</a>
+        </div>
+
+        <div class="card card-featured reveal" style="transition-delay:0.2s">
+          <div class="card-badge">Prestige</div>
+          <div class="card-icon">🌟</div>
+          <h3>Suites avec Salon</h3>
+          <p>4 suites exclusives avec espace salon indépendant. Idéal pour les longs séjours et les familles.</p>
+          <p class="card-price">À partir de <strong>70 500 FCFA</strong></p>
+          <a href="/hebergement" class="card-link">Découvrir les suites →</a>
+        </div>
+
+        <div class="card reveal" style="transition-delay:0.3s">
+          <div class="card-icon">🏊</div>
+          <h3>Espace Piscine</h3>
+          <p>Piscine privée accessible aux clients, construite autour d'une vue imprenable sur le lac Mbolet.</p>
+          <p class="card-price">Inclus dans tout séjour</p>
+          <a href="/activites" class="card-link">Explorer les activités →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESTAURANT APERÇU -->
+  <section class="section-restaurant section-dark">
+    <div class="container">
+      <div class="restaurant-inner">
+        <div class="restaurant-text reveal">
+          <span class="eyebrow" style="color: var(--or-sable)">Restaurant</span>
+          <h2 style="color: var(--creme-ecru)">Cuisines du Monde</h2>
+          <div class="gold-divider"><span>〰</span></div>
+          <p>Sur la terrasse surplombant le lac Mbolet, notre chef compose une carte entre gastronomie gabonaise et saveurs européennes.</p>
+
+          <ul class="restaurant-highlights">
+            <li>🐟 Carpe à l'Odika (chocolat de brousse)</li>
+            <li>🌿 Poisson en paquet, spécialité locale</li>
+            <li>🍖 Viande de brousse selon arrivage</li>
+            <li>🌍 Cuisine africaine & européenne</li>
+          </ul>
+
+          <p class="restaurant-price">Prix moyen : <strong>15 000 FCFA</strong> par repas</p>
+
+          <a href="/restaurant" class="btn-outline" style="margin-top: 2rem; display: inline-block;">Voir le menu</a>
+        </div>
+
+        <div class="restaurant-visual reveal" style="transition-delay:0.2s">
+          <div class="restaurant-frame">
+            <div class="restaurant-inner-frame">
+              <p class="frame-text-large">Terrasse</p>
+              <p class="frame-text-sub">Vue lac Mbolet</p>
+              <div class="frame-waves">〰〰〰</div>
+              <p class="frame-text-menu">Cuisines du Monde</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITÉS APERÇU -->
+  <section class="section-activities">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Activités & Tourisme</span>
+        <h2>Explorez le Gabon</h2>
+        <div class="gold-divider"><span>〰</span></div>
+        <p>Le lac Mbolet et le fleuve Ogooué vous ouvrent leurs secrets. Vivez des expériences uniques au cœur de la nature gabonaise.</p>
+      </div>
+
+      <div class="activities-grid">
+        <a href="/activites" class="activity-card reveal">
+          <div class="activity-icon">🛶</div>
+          <h3>Pirogue sur le Lac</h3>
+          <p>Excursions en pirogue sur le lac Mbolet ou le fleuve Ogooué.</p>
+        </a>
+
+        <a href="/activites" class="activity-card activity-card-featured reveal" style="transition-delay:0.15s">
+          <div class="activity-icon">🏝️</div>
+          <h3>Île de la Tentation</h3>
+          <p>Pique-nique sur cette île mystérieuse, accessible uniquement depuis la résidence.</p>
+        </a>
+
+        <a href="/activites" class="activity-card reveal" style="transition-delay:0.3s">
+          <div class="activity-icon">🌅</div>
+          <h3>Golden Hour au Lac</h3>
+          <p>Couchers de soleil spectaculaires sur le lac, à savourer depuis la terrasse ou au bord de la piscine.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section-cta">
+    <div class="cta-overlay"></div>
+    <div class="container cta-content reveal">
+      <p class="eyebrow">Réservation</p>
+      <h2>Prêt pour un séjour d'exception ?</h2>
+      <div class="gold-divider"><span>〰</span></div>
+      <p>Contactez-nous directement pour vérifier nos disponibilités et réserver votre chambre ou suite.</p>
+      <div class="cta-btns">
+        <a href="/contact" class="btn-primary">Réserver maintenant</a>
+        <a href="tel:+24174427474" class="btn-outline">📞 +241 74 42 74 74</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* === HERO === */
+  .hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #061525 0%, #0A233C 40%, #0d2d4a 70%, #142e1a 100%);
+    overflow: hidden;
+  }
+
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse 80% 60% at 70% 40%, rgba(195,155,65,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 20% 70%, rgba(45,79,30,0.12) 0%, transparent 60%);
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 60%, rgba(10,35,60,0.5));
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--font-modern);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    opacity: 0;
+  }
+
+  .hero-title {
+    font-family: var(--font-titre);
+    font-size: clamp(3rem, 10vw, 7rem);
+    color: var(--creme-ecru);
+    text-transform: uppercase;
+    line-height: 0.9;
+    margin: 1rem 0;
+    opacity: 0;
+  }
+
+  .hero-title em {
+    font-style: normal;
+    background: linear-gradient(135deg, var(--or-sable), var(--or-solaire), var(--or-sable));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s ease infinite;
+  }
+
+  .hero-waves {
+    font-size: 2rem;
+    color: var(--or-sable);
+    letter-spacing: 0.5em;
+    margin: 1rem 0;
+    opacity: 0;
+  }
+
+  .hero-subtitle {
+    font-family: var(--font-modern);
+    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    font-weight: 300;
+    color: rgba(245, 240, 230, 0.85);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    opacity: 0;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    color: rgba(245,240,230,0.5);
+    font-family: var(--font-cinzel);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    animation: fadeInUp 1s ease 1.8s both;
+  }
+
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, var(--or-sable), transparent);
+    animation: scroll-pulse 2s ease infinite;
+  }
+
+  @keyframes scroll-pulse {
+    0%, 100% { opacity: 1; transform: scaleY(1); }
+    50% { opacity: 0.3; transform: scaleY(0.5); }
+  }
+
+  /* === STATS === */
+  .section-stats {
+    background: var(--bleu-abyssal);
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(195,155,65,0.15);
+  }
+
+  .stats-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    text-align: center;
+    padding: 1.5rem 3rem;
+    flex: 1;
+    min-width: 160px;
+  }
+
+  .stat-divider {
+    color: var(--or-sable);
+    font-size: 1.5rem;
+    opacity: 0.4;
+  }
+
+  .stat-number {
+    display: block;
+    font-family: var(--font-titre);
+    font-size: 2.5rem;
+    color: var(--or-sable);
+    line-height: 1;
+  }
+
+  .stat-label {
+    display: block;
+    font-family: var(--font-modern);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(245,240,230,0.6);
+    margin-top: 0.5rem;
+  }
+
+  /* === SECTION LIGHT === */
+  .section-light {
+    padding: var(--section-pad);
+    background: var(--sable-fin);
+  }
+
+  /* === CARDS === */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .card {
+    background: white;
+    border: 1px solid rgba(195,155,65,0.15);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(10,35,60,0.12);
+  }
+
+  .card-featured {
+    border-color: var(--or-sable);
+    background: linear-gradient(160deg, #fff 0%, #fdf9f0 100%);
+  }
+
+  .card-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--or-sable), var(--or-solaire));
+    color: var(--bleu-abyssal);
+    font-family: var(--font-cinzel);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.3rem 1rem;
+  }
+
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card h3 {
+    font-family: var(--font-cinzel);
+    font-size: 1.1rem;
+    color: var(--bleu-abyssal);
+    margin-bottom: 0.8rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    color: #5a6a7a;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-price {
+    font-family: var(--font-modern);
+    font-size: 0.85rem !important;
+    color: var(--or-sable) !important;
+    margin-top: 1rem !important;
+  }
+
+  .card-price strong {
+    font-size: 1.05rem;
+  }
+
+  .card-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-family: var(--font-cinzel);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--bleu-abyssal);
+    text-decoration: none;
+    border-bottom: 1px solid var(--or-sable);
+    padding-bottom: 2px;
+    transition: color 0.3s;
+  }
+
+  .card-link:hover {
+    color: var(--or-sable);
+  }
+
+  /* === RESTAURANT SECTION === */
+  .section-restaurant {
+    padding: var(--section-pad);
+  }
+
+  .restaurant-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .restaurant-text .eyebrow {
+    font-family: var(--font-modern);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .restaurant-text h2 {
+    color: var(--creme-ecru);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+
+  .restaurant-text p {
+    color: rgba(245,240,230,0.75);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .restaurant-highlights {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .restaurant-highlights li {
+    color: rgba(245,240,230,0.85);
+    font-size: 0.95rem;
+    padding-left: 0.5rem;
+  }
+
+  .restaurant-price {
+    font-family: var(--font-cinzel);
+    font-size: 0.9rem !important;
+    color: var(--or-sable) !important;
+  }
+
+  .restaurant-frame {
+    aspect-ratio: 3/4;
+    border: 2px solid rgba(195,155,65,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(160deg, rgba(195,155,65,0.05), rgba(45,79,30,0.1));
+  }
+
+  .restaurant-frame::before {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(195,155,65,0.15);
+  }
+
+  .restaurant-inner-frame {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .frame-text-large {
+    font-family: var(--font-titre);
+    font-size: 3rem;
+    color: var(--or-sable);
+    opacity: 0.7;
+    line-height: 1;
+  }
+
+  .frame-text-sub {
+    font-family: var(--font-modern);
+    font-size: 0.75rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(245,240,230,0.4);
+    margin: 0.5rem 0;
+  }
+
+  .frame-waves {
+    font-size: 1.5rem;
+    color: var(--or-sable);
+    letter-spacing: 0.5em;
+    margin: 1rem 0;
+    opacity: 0.5;
+  }
+
+  .frame-text-menu {
+    font-family: var(--font-cinzel);
+    font-size: 0.9rem;
+    color: rgba(245,240,230,0.6);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  /* === ACTIVITIES === */
+  .section-activities {
+    padding: var(--section-pad);
+    background: var(--creme-ecru);
+  }
+
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .activity-card {
+    display: block;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgba(10,35,60,0.1);
+    background: white;
+    transition: all 0.3s;
+    color: var(--bleu-abyssal);
+  }
+
+  .activity-card-featured {
+    background: var(--bleu-abyssal);
+    border-color: var(--bleu-abyssal);
+    color: var(--creme-ecru);
+  }
+
+  .activity-card-featured h3 {
+    color: var(--creme-ecru) !important;
+  }
+
+  .activity-card-featured p {
+    color: rgba(245,240,230,0.7) !important;
+  }
+
+  .activity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(10,35,60,0.12);
+  }
+
+  .activity-card-featured:hover {
+    background: var(--bleu-ogooue);
+  }
+
+  .activity-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .activity-card h3 {
+    font-family: var(--font-cinzel);
+    font-size: 1.05rem;
+    color: var(--bleu-abyssal);
+    margin-bottom: 0.7rem;
+  }
+
+  .activity-card p {
+    font-size: 0.88rem;
+    color: #5a6a7a;
+    line-height: 1.7;
+  }
+
+  /* === FINAL CTA === */
+  .section-cta {
+    padding: var(--section-pad);
+    background: linear-gradient(135deg, var(--bleu-abyssal) 0%, #0d3a2e 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(ellipse 70% 70% at 50% 50%, rgba(195,155,65,0.08), transparent);
+  }
+
+  .cta-content {
+    position: relative;
+    text-align: center;
+    color: var(--creme-ecru);
+  }
+
+  .cta-content .eyebrow {
+    font-family: var(--font-modern);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--or-sable);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .cta-content h2 {
+    color: var(--creme-ecru);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+  }
+
+  .cta-content p {
+    max-width: 500px;
+    margin: 0 auto 2.5rem;
+    color: rgba(245,240,230,0.7);
+  }
+
+  .cta-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .cards-grid,
+    .activities-grid,
+    .restaurant-inner {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .stats-grid {
+      gap: 1rem;
+    }
+
+    .stat-divider {
+      display: none;
+    }
+  }
+</style>
